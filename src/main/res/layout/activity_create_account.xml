@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.aimheadshot.buynsell.Activities.CreateAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/createAccountButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textStyle="bold"
+            android:background="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/lastNameEditTextId"
+            android:hint="Last Name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_outline"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignBaseline="@+id/firstNameEditTextId"
+            android:layout_alignBottom="@+id/firstNameEditTextId"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp" />
+
+        <EditText
+            android:id="@+id/firstNameEditTextId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginTop="25dp"
+            android:hint="First Name"
+            android:ems="10"
+            android:background="@drawable/edit_text_outline"
+            android:padding="10dp"
+            android:layout_below="@+id/passwordEditTextId"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="26dp" />
+
+        <EditText
+            android:id="@+id/passwordEditTextId"
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailIdEditTextId"
+            android:inputType="numberPassword"
+            android:background="@drawable/edit_text_outline"
+            android:padding="10dp"
+            android:ems="10"
+            android:layout_marginTop="25dp"
+
+            android:text=""
+            android:hint="New Password (6 digits)"/>
+
+        <EditText
+            android:id="@+id/emailIdEditTextId"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profilePicId"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:text=""
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_outline"
+            android:padding="10dp"
+            android:hint="E-mail Id"/>
+
+        <ImageButton
+            android:id="@+id/profilePicId"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profilepic"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

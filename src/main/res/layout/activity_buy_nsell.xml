@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.aimheadshot.buynsell.Activities.BuyNSellActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/bigExchangeButtonId"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/swap"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/bigSellButtonId"
+            android:background="?android:attr/colorPressedHighlight" />
+
+        <ImageView
+            android:id="@+id/bigBuyButtonId"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/buy"
+            android:background="@android:color/holo_green_light"/>
+
+        <ImageView
+            android:id="@+id/bigSellButtonId"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/sell"
+            android:layout_below="@+id/bigBuyButtonId"
+            android:background="@android:color/holo_blue_light"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/bigBuyButtonId" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
